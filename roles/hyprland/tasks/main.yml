@@ -11,6 +11,7 @@
     state: present
   loop:
     - rsync
+  become: yes
 
 - name: Copy the config folder {{ ansible_env.HOME }}
   synchronize:

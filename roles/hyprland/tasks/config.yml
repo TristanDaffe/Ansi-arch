@@ -1,6 +1,0 @@
----
-- name: Copy the config folder
-  copy:
-    src: "files/config/"
-    dest: "{{ ansible_env.HOME }}/.config/hypr/"
-    # force: yes

@@ -1,3 +1,13 @@
 ---
 # - include_tasks: install.yml
-- include_tasks: config.yml
+# - name: Install hyperland
+#   ansible.builtin.yay:
+#     name: hyperland
+#     state: present
+
+- name: Copy the config folder
+  copy:
+    src: "files/config/"
+    dest: "{{ ansible_env.HOME }}/.config/hypr/"
+    # force: yes
+

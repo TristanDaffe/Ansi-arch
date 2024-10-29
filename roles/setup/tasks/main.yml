@@ -1,10 +1,17 @@
 ---
 
+- name: update package
+  pacman: 
+    update_cache: yes
+    upgrade: yes
+  become: yes
+
 - name: install pacman dependecy 
   pacman: 
     name: "{{ item }}"
     state: present
   loop:
     - rsync
+    - git
   become: yes
 

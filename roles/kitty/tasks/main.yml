@@ -1,0 +1,14 @@
+---
+- name : install kitty 
+  pacman:
+    name: kitty 
+    state: present
+  become: yes
+
+- name: Copy the config folder {{ ansible_env.HOME }}
+  synchronize:
+    src: "files/config/kitty/"
+    dest: "{{ ansible_env.HOME }}/.config/kitty/"
+    delete: yes
+    recursive: yes
+

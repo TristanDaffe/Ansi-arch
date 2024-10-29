@@ -1,17 +1,19 @@
 ---
-- hosts: all
-#  become: yes
+- hosts: localhost
   
   roles:
-  #   - role: setup
-  #     tags:
-  #       - Setup
+    - role: setup
+      tags:
+        - Setup
 
     - role: hyprland
       tags:
         - Hyprland
 
-    # - role: kitty
-    #   tags:
-    #     - Kitty
+    - role: kitty
+      tags:
+        - Kitty
 
+    - role: rofi
+      tags: 
+        - Rofi

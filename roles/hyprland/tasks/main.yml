@@ -5,18 +5,10 @@
 #     name: hyperland
 #     state: present
 
-- name : install dependency
-  pacman: 
-    name: "{{ item }}"
-    state: present
-  loop:
-    - rsync
-  become: yes
-
 - name: Copy the config folder {{ ansible_env.HOME }}
   synchronize:
-    src: "files/config/"
-    dest: "{{ ansible_env.HOME }}/.config/"
+    src: "files/config/hypr/"
+    dest: "{{ ansible_env.HOME }}/.config/hypr/"
     delete: yes
     recursive: yes
 

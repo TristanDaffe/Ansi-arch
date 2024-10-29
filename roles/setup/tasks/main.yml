@@ -1,1 +1,10 @@
 ---
+
+- name: install pacman dependecy 
+  pacman: 
+    name: "{{ item }}"
+    state: present
+  loop:
+    - rsync
+  become: yes
+

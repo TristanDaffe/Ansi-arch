@@ -1,0 +1,14 @@
+---
+- name: Install rofi
+  pacman:
+    name: rofi
+    state: present
+  become: yes
+
+- name: Copy the config folder {{ ansible_env.HOME }}
+  synchronize:
+    src: "files/config/rofi/"
+    dest: "{{ ansible_env.HOME }}/.config/rofi/"
+    delete: yes
+    recursive: yes
+

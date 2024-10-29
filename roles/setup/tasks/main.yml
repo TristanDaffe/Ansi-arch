@@ -13,5 +13,6 @@
   loop:
     - rsync
     - git
+    - ttf-hack 
   become: yes
 

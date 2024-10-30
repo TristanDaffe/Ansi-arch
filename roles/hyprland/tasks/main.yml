@@ -5,7 +5,7 @@
 #     name: hyperland
 #     state: present
 
-- name: Copy the config folder {{ ansible_env.HOME }}
+- name: Copy the config folder
   synchronize:
     src: "files/config/hypr/"
     dest: "{{ ansible_env.HOME }}/.config/hypr/"

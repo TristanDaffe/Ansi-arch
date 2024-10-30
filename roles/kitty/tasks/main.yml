@@ -3,9 +3,9 @@
   pacman:
     name: kitty 
     state: present
-  become: yes
+  become: true
 
-- name: Copy the config folder {{ ansible_env.HOME }}
+- name: Copy the config folder
   synchronize:
     src: "files/config/kitty/"
     dest: "{{ ansible_env.HOME }}/.config/kitty/"

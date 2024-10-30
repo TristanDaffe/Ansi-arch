@@ -4,7 +4,7 @@
   pacman: 
     update_cache: yes
     upgrade: yes
-  become: yes
+  become: true
 
 - name: install pacman dependecy 
   pacman: 
@@ -15,5 +15,5 @@
     - git
     - ttf-hack 
     - ttf-nerd-fonts-symbols
-  become: yes
+  become: true
 

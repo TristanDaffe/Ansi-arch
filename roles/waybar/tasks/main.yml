@@ -3,9 +3,9 @@
   pacman:
     name: waybar 
     state: present
-  become: yes
+  become: true
 
-- name: Copy the config folder {{ ansible_env.HOME }}
+- name: Copy the config folder
   synchronize:
     src: "files/config/waybar/"
     dest: "{{ ansible_env.HOME }}/.config/waybar/"

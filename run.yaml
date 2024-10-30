@@ -17,3 +17,7 @@
     - role: rofi
       tags: 
         - Rofi
+
+    - role: waybar
+      tags:
+        - Waybar

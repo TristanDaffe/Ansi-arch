@@ -1,14 +1,14 @@
 ---
-- name: install rofi
+- name: install waybar 
   pacman:
-    name: rofi
+    name: waybar 
     state: present
   become: yes
 
 - name: Copy the config folder {{ ansible_env.HOME }}
   synchronize:
-    src: "files/config/rofi/"
-    dest: "{{ ansible_env.HOME }}/.config/rofi/"
+    src: "files/config/waybar/"
+    dest: "{{ ansible_env.HOME }}/.config/waybar/"
     delete: yes
     recursive: yes
 

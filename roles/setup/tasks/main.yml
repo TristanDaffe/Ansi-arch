@@ -14,5 +14,6 @@
     - rsync
     - git
     - ttf-hack 
+    - ttf-nerd-fonts-symbols
   become: yes
 

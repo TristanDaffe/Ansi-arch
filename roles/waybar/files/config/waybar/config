@@ -1,6 +1,6 @@
 {
 	"layer": "top",
-	"modules-left": ["custom/launcher","cpu","memory","custom/media","tray"],
+	"modules-left": ["custom/launcher","cpu","memory","custom/media","network", "tray"],
 	"modules-center": ["river/tags"],
 	"modules-right": ["custom/updates","custom/wallpaper","backlight","pulseaudio","clock", "battery","custom/power"],
 	
@@ -15,14 +15,20 @@
 		}
 	},
 
-    "river/tags": {
+    	"river/tags": {
 		"num-tags": 6
-    },
+ 	   },
 	"network": {
-		"tooltip": false,
-		"format-wifi": "  {essid}",
-		"format-ethernet": ""
-	},
+       	    "tooltip": true,
+            "format-wifi": " {essid}",
+            "format-ethernet": "󰈀 ",
+            "tooltip-format": "Network: <b>{essid}</b>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
+            "format-linked": "󰈀 {ifname} (No IP)",
+            "format-disconnected": "󰖪 ",
+            "tooltip-format-disconnected": "Disconnected",
+            "format-alt": " {bandwidthDownBytes}  {bandwidthUpBytes}",
+            "interval": 2,
+    	},
 	"backlight": {
 		"tooltip": false,
 		"format": " {}%",
@@ -47,8 +53,8 @@
 		"spacing": 10
 	},
     "clock": {
-        "format": " {:%-I:%M  󰃭 %d/%m/%Y}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<b>\n<tt><small>{calendar}</small></tt>"
+        "format": " {:%H:%M  󰃭 %d/%m/%Y}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n\n<tt>{calendar}</tt>",
     },
     "cpu": {
         "interval": 15,

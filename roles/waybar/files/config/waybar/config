@@ -47,7 +47,8 @@
 		"spacing": 10
 	},
     "clock": {
-        "format": " {:%I:%M  󰃭 %d/%m/%Y}"
+        "format": " {:%-I:%M  󰃭 %d/%m/%Y}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<b>\n<tt><small>{calendar}</small></tt>"
     },
     "cpu": {
         "interval": 15,
@@ -79,7 +80,8 @@
     },
     "custom/power":{
         "format": " ",
-        "on-click": "bash ~/.config/rofi/leave/leave.sh",
+        "on-click": "hyprctl dispatch exit",
+        "tooltip": false
     },
     "custom/updates":{
         "format": "{} Update(s)",

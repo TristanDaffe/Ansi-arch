@@ -6,6 +6,7 @@
 		"memory",
 		"custom/media",
 		"network",
+		"bluetooth",
 		"tray"
 	],
 	"modules-center": [

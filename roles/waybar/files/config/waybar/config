@@ -12,7 +12,6 @@
 		"river/tags"
 	],
 	"modules-right": [
-		"custom/updates",
 		"custom/wallpaper",
 		"backlight",
 		"pulseaudio",
@@ -48,6 +47,14 @@
 		"format-alt": " {bandwidthDownBytes}  {bandwidthUpBytes}",
 		"interval": 2
 	},
+	"bluetooth": {
+        "format-on": "󰂯",
+        "format-off": "󰂲",
+        "format-disabled": "",
+        "format-connected": "󰂱 {num_connections}",
+        "tooltip-format-connected": "{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+    },
 	"backlight": {
 		"tooltip": false,
 		"format": " {}%",

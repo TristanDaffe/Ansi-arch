@@ -10,7 +10,7 @@
 		"tray"
 	],
 	"modules-center": [
-		"hyrpland/workspaces"
+		"custom/workspaces"
 	],
 	"modules-right": [
 		"custom/wallpaper",
@@ -133,7 +133,7 @@
 		"format": " ",
 		"on-click": "bash ~/.config/system_scripts/pkill_bc"
 	},
-	"hyrpland/workspaces": {
+	"custom/workspaces": {
     	"format": "{icon}",
 		"on-scroll-up": "hyprctl dispatch workspace e+1",
 		"on-scroll-down": "hyprctl dispatch workspace e-1",

@@ -10,7 +10,7 @@
 		"tray"
 	],
 	"modules-center": [
-		"hyrpland/workspaces"
+		"hyprland/workspaces"
 	],
 	"modules-right": [
 		"custom/wallpaper",

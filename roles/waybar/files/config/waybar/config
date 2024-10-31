@@ -49,6 +49,7 @@
 		"interval": 2
 	},
 	"bluetooth": {
+		"controller": "controller1",
         "format-on": "󰂯",
         "format-off": "󰂲",
         "format-disabled": "",

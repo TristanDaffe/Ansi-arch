@@ -45,7 +45,7 @@ window#waybar.hidden {
 
 #workspaces button {
 	transition: none;
-	color: #B5E8E0;
+	color: #7880B5;
 	background: transparent;
 	font-size: 16px;
 	border-radius: 2px;
@@ -89,7 +89,7 @@ window#waybar.hidden {
 
 #tags button {
 	transition: none;
-	color: #B5E8E0;
+	color: #7880B5;
 	background: transparent;
 	font-size: 16px;
 	border-radius: 2px;

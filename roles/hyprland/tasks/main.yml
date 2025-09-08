@@ -6,7 +6,9 @@
 #     state: present
 
 - name: Copy the config folder
-  template:
-    src: "templates/config/hypr/"
+  synchronize:
+    src: "tempaltes/config/hypr/"
     dest: "{{ ansible_env.HOME }}/.config/hypr/"
-    force: yes
+    delete: yes
+    recursive: yes
+

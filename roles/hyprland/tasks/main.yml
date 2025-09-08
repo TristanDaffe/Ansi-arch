@@ -9,6 +9,4 @@
   ansible.builtin.copy:
     src: "templates/config/hypr/"
     dest: "{{ ansible_env.HOME }}/.config/hypr/"
-    delete: yes
-    recursive: yes
 

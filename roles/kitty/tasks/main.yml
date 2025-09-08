@@ -6,9 +6,7 @@
   become: true
 
 - name: Copy the config folder
-  synchronize:
-    src: "files/config/kitty/"
+  ansible.builtin.copy:
+    src: "templates/config/kitty/"
     dest: "{{ ansible_env.HOME }}/.config/kitty/"
-    delete: yes
-    recursive: yes
 

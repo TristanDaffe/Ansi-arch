@@ -6,9 +6,7 @@
   become: true
 
 - name: Copy the config folder
-  synchronize:
-    src: "files/config/rofi/"
+  ansible.builtin.copy:
+    src: "templates/config/rofi/"
     dest: "{{ ansible_env.HOME }}/.config/rofi/"
-    delete: yes
-    recursive: yes
 

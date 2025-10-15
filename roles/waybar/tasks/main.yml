@@ -7,7 +7,7 @@
 
 - name: Copy the config folder
   synchronize:
-    src: "files/config/waybar/"
+    src: "templates/config/waybar/"
     dest: "{{ ansible_env.HOME }}/.config/waybar/"
     delete: yes
     recursive: yes
